@@ -1,0 +1,204 @@
+/* Estilos gerais do chat */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #1a202c; 
+    color: #ffffff;
+    border-radius: 0.25rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+/* Estilos do cabeçalho do chat (menu superior) */
+.chat-header {
+    background-color: #2d3748; 
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    border-bottom: 1px solid #4a5568; 
+}
+
+.header-button {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    outline: none;
+    font-size: 0.9rem;
+}
+
+.header-button:hover {
+    background-color: #4a5568; 
+}
+
+/* Estilos do painel de configurações */
+.settings-panel {
+    background-color: #2d3748;
+    padding: 1rem;
+    border-bottom: 1px solid #4a5568;
+}
+
+.settings-panel h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.setting-item {
+    margin-bottom: 0.75rem;
+}
+
+.setting-item label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-size: 0.9rem;
+    color: #cbd5e0;
+}
+
+.setting-item input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #4a5568;
+    border-radius: 0.25rem;
+    background-color: #1a202c;
+    color: #ffffff;
+    outline: none;
+    font-size: 0.9rem;
+}
+
+/* Estilos da área de mensagens */
+.message-area {
+    flex-grow: 1;
+    padding: 1rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column-reverse; 
+    scrollbar-width: thin; 
+    scrollbar-color: #4a5568 #2d3748; 
+}
+
+/* Estilos da barra de rolagem para navegadores WebKit (Chrome, Safari) */
+.message-area::-webkit-scrollbar {
+    width: 6px;
+}
+
+.message-area::-webkit-scrollbar-thumb {
+    background-color: #4a5568;
+    border-radius: 3px;
+}
+
+.message-area::-webkit-scrollbar-track {
+    background-color: #2d3748; 
+}
+
+/* Estilos de cada mensagem */
+.message {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    word-break: break-word; 
+}
+
+.message strong {
+    font-weight: bold;
+    margin-right: 0.25rem;
+    color: #facc15; 
+}
+
+/* Estilos para suas próprias mensagens */
+.my-message {
+    text-align: right;
+    background-color: rgba(45, 55, 72, 0.5);
+    border-radius: 0.25rem;
+    padding: 0.5rem; 
+}
+
+.my-message strong {
+    color: #63b3ed; 
+}
+
+/* Estilos para mensagens do sistema */
+.system-message {
+    color: #facc15; 
+    font-style: italic; 
+}
+
+/* Estilos da área de entrada de mensagens */
+.input-area {
+    padding: 1rem;
+    background-color: #2d3748;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #4a5568; 
+}
+
+/* Estilos do botão de emoji */
+.emoji-button {
+    margin-right: 0.5rem;
+    background-color: #4a5568;
+    color: #ffffff;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.emoji-button:hover {
+    background-color: #718096; 
+}
+
+/* Estilos do input de texto da mensagem */
+.message-input {
+    flex-grow: 1;
+    padding: 0.5rem;
+    border-radius: 0.25rem 0 0 0.25rem;
+    background-color: #4a5568;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    font-size: 0.9rem;
+}
+
+/* Estilos do botão de enviar */
+.send-button {
+    background-color: #4299e1; 
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 0 0.25rem 0.25rem 0;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.send-button:hover {
+    background-color: #63b3ed;
+}
+
+/* Estilos do container do seletor de emojis */
+.emoji-picker-container {
+    position: absolute;
+    bottom: 5rem; 
+    left: 1rem;
+    background-color: #4a5568;
+    border-radius: 0.25rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
