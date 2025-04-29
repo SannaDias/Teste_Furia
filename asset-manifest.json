@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Teste_Furia/static/css/main.e38c42fe.css",
+    "main.js": "/Teste_Furia/static/js/main.32837e0c.js",
+    "static/js/453.3e639c72.chunk.js": "/Teste_Furia/static/js/453.3e639c72.chunk.js",
+    "index.html": "/Teste_Furia/index.html",
+    "main.e38c42fe.css.map": "/Teste_Furia/static/css/main.e38c42fe.css.map",
+    "main.32837e0c.js.map": "/Teste_Furia/static/js/main.32837e0c.js.map",
+    "453.3e639c72.chunk.js.map": "/Teste_Furia/static/js/453.3e639c72.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e38c42fe.css",
+    "static/js/main.32837e0c.js"
+  ]
+}
